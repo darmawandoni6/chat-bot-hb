@@ -1,0 +1,125 @@
+.chat-bot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  background-color: #4dc247;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-bot > div > svg {
+  height: 30px;
+}
+
+.icon-fill {
+  fill: white;
+}
+
+.icon:hover .icon-chat {
+  border: 1px solid;
+  fill: #4dc247;
+}
+
+.live-chat-container-false {
+  display: none;
+}
+
+.live-chat-container-true {
+  position: fixed;
+  z-index: 99;
+  height: 350px;
+  width: 300px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  transition: fade;
+  transform-style: preserve-3d;
+  transition-delay: 2s;
+  transition-duration: 2s;
+  background-color: #fff;
+  display: flex;
+  flex-flow: column;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.live-chat-container-true .head-live-chat {
+  height: 48px;
+  width: 100%;
+  background-color: #46a46b;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.live-chat-container-true .body-live-chat {
+  background: white;
+  flex-grow: 1;
+  overflow: auto;
+  padding: 15px;
+}
+
+.live-chat-container-true .input-parent-live-chat {
+  height: 48px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.live-chat-container-true .input-parent-live-chat .textarea {
+  margin-left: 5px;
+  overflow-wrap: break-word;
+  resize: none;
+  border: none;
+}
+.live-chat-container-true .input-parent-live-chat .textarea:focus-visible {
+  outline: none;
+}
+
+.live-chat-container-true .body-live-chat .right-balloon {
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px;
+  width: fit-content;
+  min-width: 25px;
+  max-width: 75%;
+  border: 1px solid #eeeff3;
+  margin-bottom: 15px;
+  margin-left: auto;
+}
+
+.live-chat-container-true .body-live-chat .left-balloon p,
+.live-chat-container-true .body-live-chat .right-balloon p {
+  margin-bottom: 0;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.live-chat-container-true .body-live-chat .left-balloon {
+  border-radius: 5px;
+  background-color: #eeeff3;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px;
+  width: fit-content;
+  min-width: 25px;
+  max-width: 75%;
+  margin-bottom: 15px;
+}
