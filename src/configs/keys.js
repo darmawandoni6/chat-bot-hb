@@ -1,9 +1,9 @@
 module.exports = {
-  URL_API: "https://go-dev.halobro.co/v1/api",
+  URL_API: process.env.REACT_APP_URL_API,
   APP_TITLE: "Halobro",
-  PUSHER_APP_ID: 1320276,
-  PUSHER_KEY: "7f06acfd7a31ca44c97b",
-  PUSHER_SECRET: "ecedb6da77839bba4062",
+  PUSHER_APP_ID: process.env.REACT_APP_PUSHER_APP_ID,
+  PUSHER_KEY: process.env.REACT_APP_PUSHER_KEY,
+  PUSHER_SECRET: process.env.REACT_APP_PUSHER_SECRET,
   PUSHER_CLUSTER: "ap1",
   CHANNEL_DEFAULT: "halobro",
   LISTEN_OPEN: "open-",
